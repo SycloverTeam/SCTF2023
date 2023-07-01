@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group>
+    <image>
+        <read filename="inline:data://image/x-portable-anymap;base64,{ppm_data}" />
+        <write filename="/tmp/sess_afkl" />
+    </image>
+
+    <image id="a1">
+        <read size="{img_size}x1" filename="rgb:/flag"/>
+    </image>
+    <image id="w1">
+        <read size="10x10" filename="null:"/>
+        <composite image="a1" geometry="+0"/>
+
+        <write filename="rgb:/tmp/ttt1"/>
+    </image>
+
+    <image id="a2">
+        <read size="{img_size}x1+1" filename="rgb:/flag"/>
+    </image>
+    <image id="w2">
+        <read size="10x10" filename="null:"/>
+        <composite image="w1" geometry="+0"/>
+        <composite image="a2" geometry="+1"/>
+
+        <write filename="rgb:/tmp/ttt1"/>
+    </image>
+
+    <image id="a3">
+        <read size="{img_size}x1+2" filename="rgb:/flag"/>
+    </image>
+    <image id="w3">
+        <read size="10x10" filename="null:"/>
+        <composite image="w2" geometry="+0"/>
+        <composite image="a3" geometry="+2"/>
+
+        <write filename="rgb:/tmp/ttt1"/>
+    </image>
+
+    <image id="a4">
+        <read size="{img_size}x1+3" filename="rgb:/flag"/>
+    </image>
+    <image id="w4">
+        <read size="10x10" filename="null:"/>
+        <composite image="w3" geometry="+0"/>
+        <composite image="a4" geometry="+3"/>
+
+        <write filename="rgb:/tmp/ttt1"/>
+    </image>
+
+    <image id="a5">
+        <read size="{img_size}x1+4" filename="rgb:/flag"/>
+    </image>
+    <image id="w5">
+        <read size="10x10" filename="null:"/>
+        <composite image="w4" geometry="+0"/>
+        <composite image="a5" geometry="+4"/>
+
+        <write filename="rgb:/tmp/ttt1"/>
+    </image>
+
+    <image id="a6">
+        <read size="{img_size}x1+5" filename="rgb:/flag"/>
+    </image>
+    <image id="w6">
+        <read size="10x10" filename="null:"/>
+        <composite image="w5" geometry="+0"/>
+        <composite image="a6" geometry="+5"/>
+
+        <write filename="rgb:/tmp/ttt1"/>
+    </image>
+</group>
