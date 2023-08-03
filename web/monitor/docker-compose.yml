@@ -1,0 +1,12 @@
+version: '3'
+services:
+  monitor:
+    build:
+      context: .  
+      dockerfile: Dockerfile  
+    image: sctf/monitor
+    ports:
+      - '8080:80'
+    restart: unless-stopped
+    environment:
+      - FLAG=SCTF{test}
